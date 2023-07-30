@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/GoogleLoginWeb/static/css/main.073c9b0a.css",
+    "main.js": "/GoogleLoginWeb/static/js/main.3e1ff640.js",
+    "static/js/787.11d99267.chunk.js": "/GoogleLoginWeb/static/js/787.11d99267.chunk.js",
+    "static/media/logo.svg": "/GoogleLoginWeb/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/GoogleLoginWeb/index.html",
+    "main.073c9b0a.css.map": "/GoogleLoginWeb/static/css/main.073c9b0a.css.map",
+    "main.3e1ff640.js.map": "/GoogleLoginWeb/static/js/main.3e1ff640.js.map",
+    "787.11d99267.chunk.js.map": "/GoogleLoginWeb/static/js/787.11d99267.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.3e1ff640.js"
+  ]
+}
