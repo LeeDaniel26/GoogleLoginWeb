@@ -1,25 +1,54 @@
+import React, { useEffect } from 'react'
 import logo from './logo.svg';
 import './App.css';
+import { GoogleLogin } from '@react-oauth/google';
+import { GoogleOAuthProvider } from '@react-oauth/google';
 
-function App() {
+const GoogleLogIn = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <React.Fragment>
+      <GoogleOAuthProvider clientId="967419455627-uj47kfrnheso9kn38b6h30h3mspkperk.apps.googleusercontent.com">
+        <GoogleLogin
+          buttonText="google login"
+          onSuccess={(credentialResponse) => {
+            console.log(credentialResponse);
+          }}
+          onError={() => {
+            console.log('LOGIN FAILED');
+          }}
+      />
+      </GoogleOAuthProvider>
+    </React.Fragment>
+  )
 }
 
-export default App;
+export default GoogleLogIn
+
+// function App() {
+
+
+
+//   return (
+//     <div className="App">
+//       <header className="App-header">
+//         <img src={logo} className="App-logo" alt="logo" />
+//         {user && (
+//           <h1>welcome, {user.Bd}</h1>
+//         )}
+//         <GoogleLogin
+//           clientId="967419455627-uj47kfrnheso9kn38b6h30h3mspkperk.apps.googleusercontent.com"
+//           buttonText="Login"
+//           onSuccess={responseGoogle}
+//           onFailure={responseGoogle}
+//         />
+//         <GoogleLogout
+//           clientId="967419455627-uj47kfrnheso9kn38b6h30h3mspkperk.apps.googleusercontent.com"
+//           buttonText="Logout"
+//           onLogoutSuccess={logout}
+//         />
+//       </header>
+//     </div>
+//   );
+// }
+
+// export default App;
